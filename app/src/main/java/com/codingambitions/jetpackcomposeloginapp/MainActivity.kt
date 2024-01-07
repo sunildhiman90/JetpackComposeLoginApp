@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.sp
 import com.codingambitions.jetpackcomposeloginapp.data.LoginRepository
 import com.codingambitions.jetpackcomposeloginapp.data.LoginViewModel
 import com.codingambitions.jetpackcomposeloginapp.ui.theme.JetpackComposeLoginAppTheme
+import com.codingambitions.loginapp.shared.Greeting
 
 
 class MainActivity : ComponentActivity() {

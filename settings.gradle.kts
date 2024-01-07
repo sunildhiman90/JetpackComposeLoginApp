@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "JetpackComposeLoginApp"
 include(":app")
- 
+include(":shared")
