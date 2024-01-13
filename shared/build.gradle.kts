@@ -1,6 +1,8 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+
+    id("org.jetbrains.compose") version "1.5.11"
 }
 
 kotlin {
@@ -20,6 +22,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
+            isStatic = true
         }
     }
 
@@ -27,6 +30,13 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 //put your multiplatform dependencies here
+
+                implementation(compose.runtime)
+                implementation(compose.foundation)
+                implementation(compose.material3)
+
+                implementation("dev.icerock.moko:mvvm-core:0.16.1")
+
             }
         }
 

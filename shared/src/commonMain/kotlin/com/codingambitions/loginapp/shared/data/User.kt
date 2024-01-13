@@ -1,4 +1,4 @@
-package com.codingambitions.jetpackcomposeloginapp.data
+package com.codingambitions.loginapp.shared.data
 
 data class User(
     val id: String,
